@@ -1,5 +1,21 @@
 # ONNX-FreeYOLO
 
+## Requirements
+- We recommend you to use Anaconda to create a conda environment:
+```Shell
+conda create -n onnx_yolo python=3.6
+```
+
+- Then, activate the environment:
+```Shell
+conda activate onnx_yolo
+```
+
+- Requirements:
+```Shell
+pip install -r requirements.txt 
+```
+
 ## Download FreeYOLO ONNX file
 Main results on COCO-val:
 
