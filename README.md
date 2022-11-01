@@ -29,9 +29,12 @@ Main results on COCO-val:
 
 ## ONNXRuntime Demo
 
+For example:
+
 ```shell
-python3 onnx_inference.py --weight weights/onnx/11/yolo_free_large.onnx -i test_image.jpg -s 0.3 -size 640
+python3 onnx_inference.py --weight weights/onnx/yolo_free_large_opset_11.onnx -i test_image.jpg -s 0.3 -size 640
 ```
+
 Notes:
 * --weight: your converted onnx model
 * -i: input_image
