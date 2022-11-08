@@ -22,8 +22,8 @@ Main results on COCO-val:
 | Model          |  Scale  |    AP    |    AP50    |  ONNX(opset=11)  |  ONNX(opset=10)  |
 |----------------|---------|----------|------------|------------------|------------------|
 | FreeYOLO-Nano  |  416    |      |        |  |  |
-| FreeYOLO-Tiny  |  416    |      |        |  |  |
-| FreeYOLO-Large |  640    |   47.1   |   67.4     | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_large_opset_11.onnx) |  [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_large_opset_10.onnx) |
+| FreeYOLO-Tiny  |  416    |   31.1   |   49.4     | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_tiny_opset_11.onnx) | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_tiny_opset_10.onnx) |
+| FreeYOLO-Large |  640    |     |        |  |  |
 | FreeYOLO-Huge  |  640    |     |        |  |  |
 
 
@@ -32,7 +32,7 @@ Main results on COCO-val:
 For example:
 
 ```shell
-python3 onnx_inference.py --weight weights/onnx/yolo_free_large_opset_11.onnx -i test_image.jpg -s 0.3 -size 640
+python3 onnx_inference.py --weight weights/onnx/yolo_free_tiny_opset_11.onnx -i test_image.jpg -s 0.5 -size 416
 ```
 
 Notes:

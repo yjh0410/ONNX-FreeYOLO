@@ -17,13 +17,13 @@ from utils.vis_tools import visualize
 
 def make_parser():
     parser = argparse.ArgumentParser("onnxruntime inference sample")
-    parser.add_argument("--model", type=str, default="weights/onnx/11/yolo_free_large.onnx",
+    parser.add_argument("--model", type=str, default="weights/onnx/11/yolo_free_tiny.onnx",
                         help="Input your onnx model.")
     parser.add_argument("-i", "--image_path", type=str, default='test_image.jpg',
                         help="Path to your input image.")
     parser.add_argument("-o", "--output_dir", type=str, default='results/',
                         help="Path to your output directory.")
-    parser.add_argument("-s", "--score_thr", type=float, default=0.3,
+    parser.add_argument("-s", "--score_thr", type=float, default=0.5,
                         help="Score threshould to filter the result.")
     parser.add_argument("-size", "--img_size", type=int, default=640,
                         help="Specify an input shape for inference.")
